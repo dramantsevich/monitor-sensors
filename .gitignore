@@ -1,0 +1,23 @@
+# Maven
+target/
+*.jar
+*.war
+*.class
+*.log
+
+# IDE-specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+
+# Java
+*.class
+*.log
+*.jar
+
+# Spring Boot
+spring-boot-app/
+spring-boot-application/
