@@ -49,6 +49,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.PUT, "/api/sensors/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/api/sensors/**").hasRole("ADMIN")
                         .requestMatchers("/api/sensors/search/name", "/api/sensors/search/model").hasAnyRole("ADMIN", "VIEWER")
+                        .requestMatchers("/swagger-ui/**", "/v3/api-docs", "/webjars/**", "/swagger-resources/**").authenticated()
                         .anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults());
 
