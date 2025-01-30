@@ -5,7 +5,7 @@ CREATE TABLE sensors (
                         range_from INTEGER NOT NULL CHECK (range_from >= 0),
                         range_to INTEGER NOT NULL CHECK (range_to >= 0),
                         type VARCHAR(20) NOT NULL,
-                        unit VARCHAR(10),
+                        unit VARCHAR(20),
                         location VARCHAR(40),
                         description VARCHAR(200)
 );
